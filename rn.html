@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pubid — Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="pl.css">
+</head>
+
+<body>
+
+    <nav class="navbartop">
+        <h1 class="logo">pubid</h1>
+        <div class="nav-links">
+            <a href="#about">about</a>
+            <a href="#skill">skills</a>
+            <a href="#work">work</a>
+        </div>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" onclick="closeMenu()">about</a>
+        <a href="#skill" onclick="closeMenu()">skills</a>
+        <a href="#work" onclick="closeMenu()">work</a>
+    </div>
+
+    <div id="about" class="aboutsection">
+        <div class="about-inner">
+            <img class="image" src="cat.jpg" alt="Profile Photo">
+            <div class="about-right">
+                <div class="abouttext">
+                    <h2>About Me</h2>
+                    <p>Halo, nama saya Faadhil Abid Sakha Riyanto.
+                        Saya masih dalam tahap belajar pemrograman web, khususnya HTML, CSS, JavaScript, dan Laravel.
+                        Saat ini saya belum menguasainya dengan lancar, namun terus berusaha belajar secara bertahap.
+                    </p>
+                </div>
+                <div class="skillssection">
+                    <div class="skill-mini-card">
+                        <div class="image-wrapper"><img class="imageskill" src="cat.jpg" alt=""></div>
+                        <div class="textskill">
+                            <h2>HTML & CSS</h2>
+                            <p>Structuring and styling responsive web layouts</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="image-wrapper"><img class="imageskill" src="cat.jpg" alt=""></div>
+                        <div class="textskill">
+                            <h2>JavaScript</h2>
+                            <p>Adding interactivity and dynamic behavior to websites.</p>
+                        </div>
+                    </div>
+                    <div class="skill-mini-card">
+                        <div class="image-wrapper"><img class="imageskill" src="cat.jpg" alt=""></div>
+                        <div class="textskill">
+                            <h2>Laravel</h2>
+                            <p>Backend development with MVC architecture and CRUD systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="skill" class="skills-modern">
+        <h2 class="skills-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Laravel</h3>
+                <div class="progress-bar">
+                    <div class="progress laravel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="work-section">
+        <h2 class="section-title">My Work</h2>
+        <div class="work-grid">
+            <div class="work-card">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+                <div class="work-overlay">
+                    <h3>Website Portfolio</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+                <div class="work-overlay">
+                    <h3>CRUD Laravel App</h3>
+                    <p>Laravel & MySQL</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+                <div class="work-overlay">
+                    <h3>Landing Page</h3>
+                    <p>Responsive Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
+        function closeMenu() { document.getElementById('mobileNav').classList.remove('open'); }
+    </script>
+</body>
+
+</html>
