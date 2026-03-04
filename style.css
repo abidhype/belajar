@@ -14,8 +14,7 @@ body {
 /* Navbar Styles */
 .navbartop h1 {
     font-size: 2em;
-    margin-right: 1130px;
-    margin-left: 30px;
+    margin: 0;
     color: #333;
 
 
@@ -25,14 +24,11 @@ body {
 
 .navbartop {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 60px;
     background-color: #ecebeb;
     height: 60px;
-    gap: 60px;
-    
-
-
 }
 
 .navbartop a {
@@ -56,28 +52,32 @@ body {
     background-color: #989da3;
     box-shadow: 0px 0px 0px #b6b6b6;
 }
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
 
 /* ===== ABOUT SECTION CLEAN VERSION ===== */
 
 .aboutsection {
     position: relative;
-    padding: 60px;
-    height: 94vh;
+    padding: 120px 40px;
     overflow: hidden;
 }
 
-/* Container utama */
 .about-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 /* ===== IMAGE ===== */
 .about-image img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
     border-radius: 20px;
-    position: absolute;
-    top: 118px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -87,10 +87,9 @@ body {
 
 /* ===== TEXT AREA ===== */
 .about-content {
-    padding: 50px;
-    position: absolute;
-    left: 480px;
-    top: 70px;
+    padding: px;
+    max-width: 700px;
+    
 }
 
 /* About Text */
@@ -294,6 +293,3 @@ body {
 .work-card:hover .work-overlay {
     opacity: 1;
 }
-
-
-
