@@ -87,8 +87,8 @@ body {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
 }
-
 .about-image img:hover {
     transform: scale(1.05);
 }
